@@ -1,0 +1,74 @@
+{
+  "name": "cascadesite",
+  "scripts": {
+  },
+  "env": {
+    "APP_DOMAIN": {
+      "required": true
+    },
+    "CLIENT_ID": {
+      "required": true
+    },
+    "CLIENT_SECRET": {
+      "required": true
+    },
+    "EMAIL_SALES": {
+      "required": true
+    },
+    "HEROKU_POSTGRESQL_CHARCOAL_URL": {
+      "required": true
+    },
+    "LANG": {
+      "required": true
+    },
+    "NEW_RELIC_LICENSE_KEY": {
+      "required": true
+    },
+    "NEW_RELIC_LOG": {
+      "required": true
+    },
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    },
+    "SENDGRID_PASSWORD": {
+      "required": true
+    },
+    "SENDGRID_USERNAME": {
+      "required": true
+    },
+    "SHEET_ID": {
+      "required": true
+    },
+    "STRIPE_API_KEY": {
+      "required": true
+    },
+    "STRIPE_PUBLIC_KEY": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    },
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "ssl",
+    "heroku-postgresql",
+    "sendgrid",
+    "newrelic"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
